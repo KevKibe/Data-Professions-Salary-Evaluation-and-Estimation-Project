@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 import os
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "path/to/service-account-key.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "peerless-dahlia-385616-cbd15253538a.json"
 
 client = storage.Client()
 bucket = client.get_bucket('cloud-ai-platform-5734b953-00ea-4818-b5b7-3420cd51a628')
