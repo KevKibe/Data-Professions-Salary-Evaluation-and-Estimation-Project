@@ -1,14 +1,13 @@
 import streamlit as st
 from google.cloud import storage
 import pickle
+import numpy as np
 
 client = storage.Client()
 bucket = client.get_bucket('cloud-ai-platform-5734b953-00ea-4818-b5b7-3420cd51a628')
 blob = bucket.get_blob('sal_model_V2.pkl')
 model = pickle.loads(blob.download_as_string())
-import numpy as np
 
-model = joblib.load('model.joblib')
 
 def make_prediction(feature_values):
     feature_names = ['remote_ratio','experience_level_EN', 'experience_level_EX', 'experience_level_MI', 'experience_level_SE','employment_type_CT', 'employment_type_FL', 'employment_type_FT', 'employment_type_PT', 'job_title_data engineer','job_title_data analyst', 'job_title_data scientist', 'job_title_machine learning engineer', 'company_size_M', 'company_size_S', 'company_size_L','year_2020', 'year_2021', 'year_2022', 'year_2023']
