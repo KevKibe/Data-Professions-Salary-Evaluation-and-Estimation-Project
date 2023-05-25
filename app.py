@@ -4,7 +4,8 @@ import pickle
 import numpy as np
 import os 
 
-key_file_path = os.environ.get('GCS_KEY')
+
+
 
 client = storage.Client.from_service_account_json(key_file_path)
 bucket = client.get_bucket('cloud-ai-platform-5734b953-00ea-4818-b5b7-3420cd51a628')
