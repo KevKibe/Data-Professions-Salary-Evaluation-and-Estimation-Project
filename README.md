@@ -1,5 +1,6 @@
 # Problem Statement 
-The problem of data professionals not knowing what salary range to offer to recruiters, or recruiters not knowing what salary range to offer to candidates, is solved by this project.<br>
+The problem addressed by this project is the estimation of salary ranges for professionals in the data industry, specifically for the roles of Data Analyst, Data Engineer, Data Scientist, and Machine Learning Engineer.<br>
+The project aims to provide a solution for recruiters who struggle with determining appropriate salary ranges to offer candidates, as well as candidates who may be unsure about the salary ranges.<br>
 Live Link: https://kevkibe-data-professions-salary-evaluation-and-predi-app-j0lf8o.streamlit.app/
 # Dataset
 The dataset is from a public salary dataset collected anonymously from professionals all over the world in the AI, ML, Data Science Space https://ai-jobs.net/salaries/download/. <br>Dataset description is in the link<br>
