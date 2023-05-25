@@ -10,7 +10,14 @@ import os
 with open('sal_model_V2.pkl', 'rb') as file:
     model = pickle.load(file)
 
-
+    input_features = {
+    'remote_ratio': None,
+    'experience_level': None,
+    'employment_type': None,
+    'job_title': None,
+    'year': None,
+    'company_size': None
+}
 def make_prediction(feature_values):
     feature_names = ['remote_ratio',
                      'experience_level_EN', 
