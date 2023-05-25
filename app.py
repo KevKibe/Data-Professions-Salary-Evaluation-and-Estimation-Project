@@ -7,7 +7,7 @@ import os
 
 
 
-with open('sal_model_V2.pkl', 'rb') as file:
+with open('sal_model_V2.pkl', 'wb') as file:
     model = pickle.load(file)
 
 
