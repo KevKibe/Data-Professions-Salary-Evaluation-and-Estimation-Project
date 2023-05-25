@@ -58,7 +58,7 @@ def make_prediction(feature_values):
     prediction_range = None
     for range_min, range_max in ranges:
         if range_min <= prediction < range_max:
-            prediction_range = f"{range_min:,} - {range_max:,}"
+            prediction_range = f"${range_min:,} - ${range_max:,}"
             break
     return prediction_range
 st.title("Data Professions Salary Estimation")
