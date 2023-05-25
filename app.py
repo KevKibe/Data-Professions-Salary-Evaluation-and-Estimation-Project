@@ -79,5 +79,6 @@ input_features['job_title'] = st.selectbox('Job Title:', options=['data analyst'
 input_features['year'] = 2023
 input_features['company_size'] = st.selectbox('Company Size:', options=[('S','less than 50 employees (small)'),('M','50 to 250 employees (medium)'),('L','more than 250 employees (large)')], format_func=lambda x: x[1], key='company_size')
 
-prediction = make_prediction(input_features)
-st.write("Estimation in USD :", prediction)
+if st.button('Submit'):
+    prediction = make_prediction(input_features)
+    st.write("Estimation in USD :", prediction)
