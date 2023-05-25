@@ -58,7 +58,7 @@ def make_prediction(feature_values):
     prediction_range = None
     for range_min, range_max in ranges:
         if range_min <= prediction < range_max:
-            prediction_range = f"{$range_min:,} - {$range_max:,}"
+            prediction_range = f"{range_min:,} - {range_max:,}"
             break
     return prediction_range
 st.title("Data Professions Salary Estimation")
@@ -80,5 +80,5 @@ input_features['company_size'] = st.selectbox('Company Size:', options=[('S','le
 
 if st.button('Salary Estimation'):
     prediction = make_prediction(input_features)
-    st.write("Estimation:", prediction)
+    st.write("Estimation in USD :", prediction)
 
