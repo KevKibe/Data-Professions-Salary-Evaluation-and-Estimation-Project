@@ -10,14 +10,6 @@ import os
 with open('sal_model_V2.pkl', 'rb') as file:
     model = pickle.load(file)
 
-    input_features = {
-    'remote_ratio': None,
-    'experience_level': None,
-    'employment_type': None,
-    'job_title': None,
-    'year': None,
-    'company_size': None
-}
 def make_prediction(feature_values):
     feature_names = ['remote_ratio',
                      'experience_level_EN', 
@@ -77,12 +69,12 @@ def make_prediction(feature_values):
     return prediction_range
 st.title("Data Professions Salary Estimation")
 
-input_features['remote_ratio'] = st.selectbox('Remote Ratio: 0 for No Remote Work, 50 for Hybrid Setup, 100 for Fully Remote"', options=[0, 50, 100])
-input_features['experience_level'] = st.selectbox('Experience Level:', options=[('EN','Entry-level / Junior'),('MI','Mid-level / Intermediate'),('SE','Senior-level / Expert'),('EX','Executive-level / Director')], format_func=lambda x: x[1])
-input_features['employment_type'] = st.selectbox('Employment Type:', options=[('PT','Part-time'),('FT','Full-time'),('CT','Contract'),('FL','Freelance')], format_func=lambda x: x[1])
-input_features['job_title'] = st.selectbox('Job Title:', options=['data analyst','data engineer','data scientist','machine learning engineer'])
-input_features['year'] = 2023
-input_features['company_size'] = st.selectbox('Company Size:', options=[('S','less than 50 employees (small)'),('M','50 to 250 employees (medium)'),('L','more than 250 employees (large)')], format_func=lambda x: x[1])
+input_features={['remote_ratio'] = st.selectbox('Remote Ratio: 0 for No Remote Work, 50 for Hybrid Setup, 100 for Fully Remote"', options=[0, 50, 100]),
+['experience_level'] = st.selectbox('Experience Level:', options=[('EN','Entry-level / Junior'),('MI','Mid-level / Intermediate'),('SE','Senior-level / Expert'),('EX','Executive-level / Director')], format_func=lambda x: x[1]),
+['employment_type'] = st.selectbox('Employment Type:', options=[('PT','Part-time'),('FT','Full-time'),('CT','Contract'),('FL','Freelance')], format_func=lambda x: x[1]),
+['job_title'] = st.selectbox('Job Title:', options=['data analyst','data engineer','data scientist','machine learning engineer']),
+['year'] = 2023,
+['company_size'] = st.selectbox('Company Size:', options=[('S','less than 50 employees (small)'),('M','50 to 250 employees (medium)'),('L','more than 250 employees (large)')], format_func=lambda x: x[1])}
 
 
 if st.button('Salary Estimation'):
