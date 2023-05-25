@@ -12,7 +12,7 @@ def load_model():
     with open('sal_model_V3.pkl', 'rb') as file:
         model = pickle.load(file)
     return model
-
+model=load_model()
 def make_prediction(feature_values):
     feature_names = ['remote_ratio',
                      'experience_level_EN', 
