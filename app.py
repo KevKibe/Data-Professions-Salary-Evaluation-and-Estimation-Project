@@ -7,9 +7,11 @@ import os
 
 
 
-with open('sal_model_V2.pkl', 'rb') as file:
-    model = pickle.load(file)
-
+@st.cache
+def load_model():
+    with open('sal_model_V3.pkl', 'rb') as file:
+        model = pickle.load(file)
+    return model
 
 def make_prediction(feature_values):
     feature_names = ['remote_ratio',
