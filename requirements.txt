@@ -1,6 +1,5 @@
 streamlit
 pickle
-gcsfs
-git+https://github.com/streamlit/files-connection
+
 numpy
 google-cloud-storage
