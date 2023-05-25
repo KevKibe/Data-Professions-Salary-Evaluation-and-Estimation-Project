@@ -2,17 +2,14 @@ import streamlit as st
 from google.cloud import storage
 import pickle
 import numpy as np
-import os
-from st_files_connection import FilesConnection
+import os 
 
-conn = st.experimental_connection('gcs', type=FilesConnection)
-model = conn.read('cloud-ai-platform-5734b953-00ea-4818-b5b7-3420cd51a628/sal_model_V2.pkl')
-#os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "peerless-dahlia-385616-cbd15253538a.json"
+key_file_path = os.environ.get('GCS_KEY')
 
-#client = storage.Client()
-#bucket = client.get_bucket('cloud-ai-platform-5734b953-00ea-4818-b5b7-3420cd51a628')
-#blob = bucket.get_blob('sal_model_V2.pkl')
-#model = pickle.loads(blob.download_as_string())
+client = storage.Client.from_service_account_json(key_file_path)
+bucket = client.get_bucket('cloud-ai-platform-5734b953-00ea-4818-b5b7-3420cd51a628')
+blob = bucket.get_blob('sal_model_V2.pkl')
+model = pickle.loads(blob.download_as_string())
 
 
 def make_prediction(feature_values):
