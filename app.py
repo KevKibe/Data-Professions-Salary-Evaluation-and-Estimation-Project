@@ -7,10 +7,8 @@ import os
 
 
 
-client = storage.Client.from_service_account_json('peerless-dahlia-385616-8c6bf8a0f03a.json')
-bucket = client.get_bucket('cloud-ai-platform-5734b953-00ea-4818-b5b7-3420cd51a628')
-blob = bucket.get_blob('sal_model_V2.pkl')
-model = pickle.loads(blob.download_as_string())
+with open('sal_model_V2.pkl', 'rb') as file:
+    model = pickle.load(file)
 
 
 def make_prediction(feature_values):
