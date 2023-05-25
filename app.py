@@ -54,7 +54,14 @@ def make_prediction(feature_values):
                             feature_values['year'] == 2022,
                             feature_values['year'] == 2023]])
     prediction = model.predict(input_data)
-    ranges = [(15000 , 48875), (48875 , 82750), (82750 , 116625), (116625 , 150500), (150500 , 184375), (184375 , 218250), (218250 , 252125), (252125 , 286000)]
+    ranges = [(15000 , 48875), 
+              (48875 , 82750), 
+              (82750 , 116625), 
+              (116625 , 150500), 
+              (150500 , 184375),
+              (184375 , 218250), 
+              (218250 , 252125), 
+              (252125 , 286000)]
     prediction_range = None
     for range_min, range_max in ranges:
         if range_min <= prediction < range_max:
