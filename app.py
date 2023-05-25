@@ -7,7 +7,7 @@ import os
 
 
 
-@st.cache
+@st.cache_data
 def load_model():
     with open('sal_model_V3.pkl', 'rb') as file:
         model = pickle.load(file)
