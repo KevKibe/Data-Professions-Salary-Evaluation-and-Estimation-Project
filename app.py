@@ -71,7 +71,14 @@ def make_prediction(feature_values):
             break
     return prediction_range
 st.title("Data Professions Salary Estimation")
-input_features={}
+input_features = {
+    'remote_ratio': None,
+    'experience_level': None,
+    'employment_type': None,
+    'job_title': None,
+    'year': 2023,
+    'company_size': None
+}
 input_features['remote_ratio'] = st.selectbox('Remote Ratio: 0 for No Remote Work, 50 for Hybrid Setup, 100 for Fully Remote"', options=[0, 50, 100], key='remote_ratio')
 input_features['experience_level'] = st.selectbox('Experience Level:', options=[('EN','Entry-level / Junior'),('MI','Mid-level / Intermediate'),('SE','Senior-level / Expert'),('EX','Executive-level / Director')], format_func=lambda x: x[1], key='experience_level')
 input_features['employment_type'] = st.selectbox('Employment Type:', options=[('PT','Part-time'),('FT','Full-time'),('CT','Contract'),('FL','Freelance')], format_func=lambda x: x[1],  key='employment_type')
