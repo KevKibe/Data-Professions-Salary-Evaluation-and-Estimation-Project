@@ -18,10 +18,7 @@ See the notebook in the repository for the Data Preprocessing and Model fitting.
  ![image](https://github.com/KevKibe/Data-Professions-Salary-Evaluation-and-Prediction-Project/assets/86055894/81edfaa3-5645-4641-9a49-fb97fef18dec)<br>
 
  Most data collected is from data professionals with senior-level experience and the least is from those with Executive-level experience.<br>
-  
-![image](https://github.com/KevKibe/Data-Professions-Salary-Evaluation-and-Prediction-Project/assets/86055894/c8698ad2-e9bc-4e73-b61d-b34dd58f4a47)<br>
-  
-Most professionals work from the office while the least have a hybrid work setup <br>
+
   
 ![image](https://github.com/KevKibe/Data-Professions-Salary-Evaluation-and-Prediction-Project/assets/86055894/d33e7334-aaf1-4e95-bdc2-24362451d610)<br>
 
