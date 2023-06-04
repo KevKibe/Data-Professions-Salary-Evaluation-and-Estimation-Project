@@ -8,7 +8,7 @@ import os
 
 
 def load_model():
-    with open('sal_model_V3.pkl', 'rb') as file:
+    with open('sal_model_V4.pkl', 'rb') as file:
         model = pickle.load(file)
     return model
 model=load_model()
