@@ -103,7 +103,7 @@ input_features['job_title'] = st.selectbox('Job Title:', options=['data analyst'
 input_features['year'] = 2023
 input_features['company_size'] = st.selectbox('Company Size:', options=[('S','less than 50 employees (small)'),('M','50 to 250 employees (medium)'),('L','more than 250 employees (large)')], format_func=lambda x: x[1], key='company_size')
 input_features['employee_residence'] = st.selectbox('Employee Residence:', options=[('Africa','Africa'),('Asia','Asia'),('Europe','Europe'),('North America','North America'),('Oceania','Oceania'),('South America','South America')], format_func=lambda x: x[1], key='employee_residence')
-input_features['company_location'] = st.selectbox(Company Location:', options=[('Africa','Africa'),('Asia','Asia'),('Europe','Europe'),('North America','North America'),('Oceania','Oceania'),('South America','South America')], format_func=lambda x: x[1], key='company_location')
+input_features['company_location'] = st.selectbox('Company Location:', options=[('Africa','Africa'),('Asia','Asia'),('Europe','Europe'),('North America','North America'),('Oceania','Oceania'),('South America','South America')], format_func=lambda x: x[1], key='company_location')
 
 if st.button('Estimate'):
     prediction = make_prediction(input_features)
