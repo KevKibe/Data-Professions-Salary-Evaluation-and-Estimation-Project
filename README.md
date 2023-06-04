@@ -22,6 +22,8 @@ See the notebook in the repository for the Data Preprocessing and Model fitting.
   
 ![image](https://github.com/KevKibe/Data-Professions-Salary-Evaluation-and-Prediction-Project/assets/86055894/d33e7334-aaf1-4e95-bdc2-24362451d610)<br>
 
-# Feature Importance         
-![image](https://github.com/KevKibe/Data-Professions-Salary-Evaluation-and-Prediction-Project/assets/86055894/3ef4540a-6c04-442f-853b-eb2c94139e0e)
+# Feature Importance    
+ ![image](https://github.com/KevKibe/Data-Professions-Salary-Evaluation-and-Estimation-Project/assets/86055894/f1f49e55-794b-4981-8703-969d6092be1d)
+
+
 
