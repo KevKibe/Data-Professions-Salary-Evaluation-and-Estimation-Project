@@ -1,14 +1,14 @@
 # Problem Statement 
 The problem addressed by this project is the estimation of salary ranges for professionals in the data industry, specifically for the roles of Data Analyst, Data Engineer, Data Scientist, and Machine Learning Engineer.<br>
 The project aims to provide a solution for recruiters who struggle with determining appropriate salary ranges to offer candidates, as well as candidates who may be unsure about the salary ranges.<br>
-Live Link: https://kevkibe-data-professions-salary-evaluation-and-predi-app-j0lf8o.streamlit.app/
+Live [Link](https://kevkibe-data-professions-salary-evaluation-and-predi-app-j0lf8o.streamlit.app/)
 # Dataset
-The dataset is from a public salary dataset collected anonymously from professionals all over the world in the AI, ML, Data Science Space https://ai-jobs.net/salaries/download/. <br>Dataset description is in the link<br>
+The dataset is from a [public salary dataset](https://ai-jobs.net/salaries/download/) collected anonymously from professionals all over the world in the AI, ML, Data Science Space. <br>Dataset description is in the link<br>
 I filtered the data for the 4 main data professions.
-<li>Data Analyst
-<li>Data Engineer
-<li>Data Scientist
-<li>Machine Learning Engineer<br>.
+- Data Analyst
+- Data Engineer
+- Data Scientist
+- Machine Learning Engineer.
 
 # Description
 The model was trained on a Google Cloud User-Instance Notebook and benchmarked against the model by AutoML.<br>
