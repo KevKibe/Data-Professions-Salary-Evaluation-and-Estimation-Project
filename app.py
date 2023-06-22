@@ -1,11 +1,6 @@
 import streamlit as st
-from google.cloud import storage
 import pickle
 import numpy as np
-import os 
-
-
-
 
 def load_model():
     with open('sal_model_V4.pkl', 'rb') as file:
