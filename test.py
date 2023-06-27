@@ -1,5 +1,4 @@
 import requests 
-import json
 
 input_features = {
     'employee_residence': 'Europe',
