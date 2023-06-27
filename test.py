@@ -14,7 +14,7 @@ payload = {
     "input_features": input_features
 }
 
-response = requests.post('http://127.0.0.1:5000/predict', json=payload)
+response = requests.post('http://172.31.6.137:5000/predict', json=payload)
 
 if response.status_code == 200:
     data = response.json()
