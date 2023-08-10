@@ -3,6 +3,6 @@ __pycache__
 app.py
 LICENSE
 README.md
-sal_model_V2
-sal_model_V3
+test.py
 salary_pred_model.ipynb
+.gitignore
