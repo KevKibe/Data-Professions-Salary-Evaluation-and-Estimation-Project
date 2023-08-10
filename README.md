@@ -31,9 +31,38 @@ The model was deployed with an interactive UI on streamlit and also as a REST AP
 2. Access the web interface at: `http://localhost:5000`
 3. Run the model on test data: `python test.py`
 
+## Deploying and Containerizing Your Application with Docker
+
+
+Before you start, make sure you have [Docker](https://www.docker.com/get-started) installed on your system. 
+
+## Access the Repository
+
+1. **Clone the Repository:** First, clone the repository for your application to your local machine or cloud instance using the following commands:
+   ```sh
+   git clone https://github.com/Data-Professions-Salary-Evaluation-and-Estimation-Project.git
+   cd Data-Professions-Salary-Evaluation-and-Estimation-Project
+2.**Build the Docker Image:** Replace your-app-name with a suitable name for your application.
+   ```
+   docker build -t Data-Professions-Salary-Evaluation-and-Estimation-Project .
+```
+
+
 ## To deploy on an AWS EC2 instance
 - Setup an EC2 instance and SSH to the instance.Use this as a [guide](https://www.machinelearningplus.com/deployment/deploy-ml-model-aws-ec2-instance/).
-- Run  `git clone https://github.com/KevKibe/KevKibe/Data-Professions-Salary-Evaluation-and-Estimation-Project`
-- Start up [Docker](https://docs.docker.com) and run `docker build -t dockerfile .`
-- run `docker run -e PORT=8080 dockerfile`
-- You can now get predictions from `http://<ec2-public-IP>:8080/predict`
+- Run
+  ```
+  git clone https://github.com/KevKibe/KevKibe/Data-Professions-Salary-Evaluation-and-Estimation-Project
+  ```
+- Start up [Docker](https://docs.docker.com) and run
+  ```
+  docker build -t dockerfile .
+  ```
+- run
+  ```
+  docker run -e PORT=8080 dockerfile
+  ```
+- You can now get predictions from
+  ```
+  http://<ec2-public-IP>:8080/predict
+  ```
